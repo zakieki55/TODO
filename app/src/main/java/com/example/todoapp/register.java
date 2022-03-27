@@ -44,7 +44,7 @@ public class register extends AppCompatActivity {
                     inpRepass.setError("Masukkan Repassword!");
                 }
                 else {
-                    if(password == repassword){
+                    if(inpPass.getText().toString().equals(inpRepass.getText().toString())){
                         Toast t = Toast.makeText(getApplicationContext(), "Pendaftaran Berhasil",
                         Toast.LENGTH_SHORT);
                         t.show();
